@@ -21,7 +21,7 @@ export const Main = () => {
             <div className="row">
                 <div className="search_input_c">
                     <input type={"text"} className="input" placeholder="Search" />
-                    <div className="search_icon_c">Search</div>
+                    <div className="search_icon_c">Search here sir</div>
                 </div>
 
                 <div className="button_outline">
