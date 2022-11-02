@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export const Main = () => {
+
+
+    const [value, setValue] = useState('')
+
+    useEffect(() => {
+      let val =  localStorage.getItem('key')
+        setValue(val)
+
+    }, [])
+
+
+
+
+
+
     return (
         <div className="main">
             <div className="row">
@@ -10,13 +25,16 @@ export const Main = () => {
                 </div>
 
                 <div className="button_outline">
-                    <div>Add Patient</div>
+                    <div onClick={()=>{
+                        localStorage.setItem('key' , 'Mohit')
+                        setValue('Mohit')
+                    }} >Add Patients </div>
                 </div>
             </div>
 
             <div className="row">
                 <div className="color_container">
-                    <div className="white_text_title">Hi, Jennifer !</div>
+                    <div className="white_text_title">Hi, { value }</div>
                     <div className="white_text_subtitle">You've been doing your whole work plan for the last two months. Way to go</div>
                 </div>
             </div>

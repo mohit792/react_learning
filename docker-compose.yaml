@@ -1,7 +1,9 @@
 version: '4.12'
 services:
    server:
-    image: myapp:1.0
+    build: .
     ports:
       - "3000:3000"
+  
+      
    
