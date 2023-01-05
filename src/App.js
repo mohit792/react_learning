@@ -12,7 +12,7 @@ function App() {
 
 
     return (
-        <div className="App">
+        <div className="App" >
             <div className="main_container">
                 {/* <Header /> */}
                 <Nav />
