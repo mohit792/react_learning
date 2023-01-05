@@ -7,9 +7,13 @@ import { useEffect, useState } from "react";
 
 function App() {
 // Hello Mohit  
+<<<<<<< HEAD
     // this is a confict change
 
 // thisi main change
+=======
+    // this is a new feature 
+>>>>>>> b81a85e1ba349cb37c597e9a5008542212eb239d
     
 
 
